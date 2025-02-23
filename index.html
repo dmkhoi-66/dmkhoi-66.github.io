@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>
+    Khoi Doan's Portfolio
+  </title>
+  <meta
+    name="description"
+    content="I'm Khoi Doan, I am a Business Analyst focused on gamification" />
+  <meta
+    name="keywords"
+    content="Khoi Doan, Khoi, Doan, Business Analyst, product owner, Portfolio, gamification" />
+  <meta name="author" content="Khoi Doan" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta property="og:image" content="images/ogimage.png" />
+  <meta
+    property="og:title"
+    content="Hello, I'm Khoi Doan, a Business Analyst. This Is My Portfolio Site" />
+  <meta
+    property="og:description"
+    content="This portfolio is built with plain HTML, CSS, and JavsScript. Fully responsive." />
+  <meta property="og:type" content="website" />
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="preload" href="main.js" as="script" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preload" href="style.css" as="style" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/pwa/apple-touch-icon.png" />
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/pwa/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/pwa/favicon-16x16.png" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="mask-icon" href="images/iconK.svg"/>
+  <meta name="apple-mobile-web-app-title" content="Khoi Doan's Portfolio" />
+  <meta name="application-name" content="Khoi Doan's Portfolio" />
+  <meta name="msapplication-TileColor" content="#000000" />
+  <meta name="theme-color" content="#1B242F" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <!-- iPhone Xs Max (1242px x 2688px) -->
+  <link
+    rel="apple-touch-startup-image"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3)"
+    href="/pwa/apple-launch-1242x2688.png" />
+  <!-- iPhone Xr (828px x 1792px) -->
+  <link
+    rel="apple-touch-startup-image"
+    media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2)"
+    href="/pwa/apple-launch-828x1792.png" />
+  <!-- iPhone X, Xs (1125px x 2436px) -->
+  <link
+    rel="apple-touch-startup-image"
+    media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3)"
+    href="/pwa/apple-launch-1125x2436.png" />
+  <!-- iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (1242px x 2208px) -->
+  <link
+    rel="apple-touch-startup-image"
+    media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3)"
+    href="/pwa/apple-launch-1242x2208.png" />
+  <!-- iPhone 8, 7, 6s, 6 (750px x 1334px) -->
+  <link
+    rel="apple-touch-startup-image"
+    media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)"
+    href="/pwa/apple-launch-750x1334.png" />
+  <!-- iPad Pro 12.9" (2048px x 2732px) -->
+  <link
+    rel="apple-touch-startup-image"
+    media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2)"
+    href="/pwa/apple-launch-2048x2732.png" />
+  <!-- iPad Pro 10.5" (1668px x 2224px) -->
+  <link
+    rel="apple-touch-startup-image"
+    media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2)"
+    href="/pwa/apple-launch-1668x2224.png" />
+  <!-- iPad Mini, Air (1536px x 2048px) -->
+  <link
+    rel="apple-touch-startup-image"
+    media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2)"
+    href="/pwa/apple-launch-1536x2048.png" />
+  <link rel="preload" href="particles.min.js" as="script" />
+  <script defer src="particles.min.js"></script>
+  <script defer src="main.js"></script>
+  <script src="sw.js"></script>
+  <link rel="canonical" href="https://dmkhoi-66.github.io/" />
+</head>
+
+<body>
+
+  <div class="star-spangled-title" id="home">
+    <div id="particles-js">
+      <div class="textcenter box one">
+        <div id="dmkimage">
+          <img width="385" height="372"
+            class="dmk-image"
+            src="images/herotest_1x.webp"
+            srcset="images/herotest_450_1x.webp 187w, images/herotest_450_2x.webp 374 w, images/herotest_1x.webp 385w, images/herotest.webp 770w"
+            sizes="(max-width: 600px) 187px, 374 px"
+            alt="Khoi Doan" />
+          <h1>
+            <span id="first-title">Hello, my name is </span><span id="dmk">Khoi Doan,</span>
+          </h1>
+          <h1 id="second-title">and I'm a Business Analyst</h1>
+          <a href="#scroll" aria-label="Scroll to about section">
+            <div class="downarrow">
+              <span class="icon-keyboard_arrow_up bounce"></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mainwrapper">
+    <!-- DROPDOWN NAV -->
+    <nav class="scrollsticky" id="scroll">
+      <div id="activeButton">
+        <div class="topnav" id="myTopnav">
+          <span class="icon-buymeacoffee logo2"></span>
+          <img
+            class="logo1"
+            srcset="images/TB-27w.png 1x, images/TB-27w-retina.png 2x"
+            alt="Khoi Doan Logo"
+            src="images/TB-27w.png" 
+            aria-hidden="true" /><img
+            class="logo2 coffee-shake"
+            srcset="images/TB-90w.png 1x, images/TB-90w-retina.png 2x"
+            src="images/TB-90w.png"
+            alt="Mobile Khoi Doan Logo"
+            aria-hidden="true" />
+          <div class="mobile-drop-flex">
+            <a id="home-nav" href="#home" class="btns mobilenone active">HOME</a>
+            <a id="about-nav" href="#about" class="btns">ABOUT</a>
+            <a id="skills-nav" href="#skills" class="btns">SKILLS</a>
+            <a id="projects-nav" href="#projects" class="btns">PROJECTS</a>
+            <a id="gallery-nav" href="#gallery" class="btns">GALLERY</a>
+            <a id="contact-nav" href="#contact" class="btns">CONTACT</a>
+          </div>
+          <span
+            class="icon hamburger"
+            role="navigation">
+            <span id="nav-icon1">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+          </span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ABOUT SECTION -->
+    <div class="headings headingsabout" id="about">
+      <h2>ABOUT ME</h2>
+    </div>
+    <section class="flex-container">
+      <div class="card bluecard item" onclick="">
+        <div class="icon" id="coffee">
+          <span class="icon-profile"></span>
+          <h3>Who am I</h3>
+        </div>
+        <p>
+          A Business Analyst and Product Owner with a track record of delivering innovative solutions for marketing and education centered around gamification. 
+          <br>Motivated to join a group of seasoned business analysts and product owner, to anticipate growth and the chance to prove personal abilities.
+        </p>
+      </div>
+      <div class="card pinkcard item" onclick="">
+        <div class="icon">
+          <span class="icon-coffeescript"></span>
+          <h3>Fueled By pure hatred</h3>
+        </div>
+        <p id="pcard">
+          My language is racism 
+        </p>
+      </div>
+      <div class="card pinkcard item" onclick="">
+        <div class="icon">
+          <span class="icon-coffeescript"></span>
+          <h3>Always Improving</h3>
+        </div>
+        <p>
+          When I'm not working I spend my days studying and building. I dedicate time to advance myself, through learning new skills, or deepening my knowledge. I have always been fascinated by how things work and love to tinker with new technologies
+        </p>
+      </div>
+      <div class="card bluecard item" onclick="">
+        <div class="icon">
+          <span class="icon-code"></span>
+          <h3>Can't write for shit</h3>
+        </div>
+        <p>
+          Cần lắm 1 content writer
+        </p>
+      </div>
+    </section>
+    <!-- </div> -->
+
+    <!-- SKILLS SECTION -->
+    <div class="wrapper2" id="skills">
+      <div class="headings">
+        <h2>SKILLS</h2>
+        <h4>Hard Skills</h4>
+      </div>
+      <section class="flex-container2">
+        <div>
+          <div class="icon1">
+            <span class="icon-checklist spancss"></span>
+            <h3>Requirement Gathering</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-document spancss"></span>
+            <h3>Documentation</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-flow spancss"></span>
+            <h3>Process designing</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-prototype spancss"></span>
+            <h3>Prototyping</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-api spancss"></span>
+            <h3>API desiging</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-ux spancss"></span>
+            <h3>UI/UX Designing</h3>
+          </div>
+        </div>
+
+      </section>
+      <div class="headings">
+        <h4>Technologies and tools</h4>
+      </div>
+      <section class="flex-container2">
+        <div>
+          <div class="icon1">
+            <span class="icon-figma spancss"></span>
+            <h3>Figma</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-postman spancss"></span>
+            <h3>Postman</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-anal-service spancss"></span>
+            <h3>Analysis Services</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-excel spancss"></span>
+            <h3>Excel</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-bi spancss"></span>
+            <h3>Power BI</h3>
+          </div>
+        </div>
+        <div>
+          <div class="icon1">
+            <span class="icon-stackoverflow spancss"></span>
+            <h3>Stack-Overflow</h3>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <!-- PROJECTS -->
+    <div class="headings headingsabout" id="projects">
+      <h2>PROJECTS</h2>
+    </div>
+    <section class="project-container">
+      <div class="cardflex">
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <div class="project-title">
+                <h3 class="back-title">List of projects</h3>
+              </div>
+              <div class="project-list">
+                <div class="easterwrapper">
+                  <ul>
+                    <li>VUS Kingdom On The clouds</li>
+                    <li>Craze For EURO 2024 </li>
+                    <li>Craze for Futsal 2024</li>
+                    <li>CASA Saving</li>
+                    <li>Open Saving Accounts</li>
+                    <li>With VikkiGO, Checkin Metro</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">My Projects</h3>
+              <p class="cardp">
+                For the past one and a half years at AppROI, I have contributed to various projects, both large and small, 
+                gaining hands-on experience in product design and development, refining my skills in UI/UX designing, documentation and process analysis
+                <br>
+                Through these experiences and mistakes along the way, I have strengthened my ability to effectively create user-centric solutions,
+                optimize process flow, and document technical requirements. 
+                <br>My role has also allowed me to enhance my problem-solving skills and adaptability in a fast-paced, agile environment.
+                <span class="high-light">nig</span>
+                <span class="easter-egg-total">ger</span> 
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <iframe
+                src=""
+                class="lazyVid"
+                data-src="https://www.youtube.com/embed/RvjOEqN-jCA?si=wclxqZQxuu-LzlAf"
+                title="VUS Kingdom on the clouds"
+                width="500"
+                height="300"
+                allowfullscreen="allowfullscreen"></iframe>
+              <div class="projectbutton">
+                <a
+                  href="https://ovi.vus.edu.vn/qr/kid"
+                  target="_blank"
+                  rel="noopener"
+                  class="button2">View App</a>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">VUS Kingdom on the clouds</h3>
+              <p class="cardp">
+                VUS Kingdom on the Clouds is an interactive gamified system designed to enhance learning experience through engaging activities. It includes reinforcement exercises that utilize repetition to aid in memorizing new words and phrases.
+                <br>
+                With six unique games, Kingdom on the Clouds has received overwhelmingly positive feedback from over <span class="high-light">100,000</span> students and parents.
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <iframe
+                src=""
+                class="lazyVid"
+                data-src="https://www.youtube.com/embed/PFVa1CwNfyA"
+                title="Craze for EURO 2024"
+                width="500"
+                height="300"
+                allowfullscreen="allowfullscreen"></iframe>
+              <div class="projectbutton">
+                <a
+                  href="https://hdbank.com.vn/vi/news/detail/tin-tuc/ghi-ban-tren-ung-dung-hdbank-den-chau-au-xem-chung-ket-euro-2024"
+                  target="_blank"
+                  rel="noopener"
+                  class="button2">Read News</a>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">Craze for EURO 2024</h3>
+              <p class="cardp">
+                As the Product Owner for "Craze for EURO 2024", I am responsible for creating project proposals, 
+                designing wireframes, mapping user and technical flows, and documenting all technical aspects of the project
+                <br>
+                After two months of operation, the campaign has generated over <span class="high-light">2,500,000</span> game sessions from <span class="high-light"> 300,000</span> unique players, surpassed stakeholder expectations.
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <iframe
+                src=""
+                class="lazyVid"
+                data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="K&N Filters"
+                width="500"
+                height="300"
+                allowfullscreen="allowfullscreen"></iframe>
+              <div class="projectbutton">
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="button2">View Live Site</a>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">Craze for Futsal 2024</h3>
+              <p class="cardp">
+                Craze for Futsal 2024
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <iframe
+                src=""
+                class="lazyVid"
+                data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Never gonna give you up"
+                width="500"
+                height="300"
+                allowfullscreen="allowfullscreen"></iframe>
+              <div class="projectbutton">
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="button2">View Live Site</a>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">CASA Saving</h3>
+              <p class="cardp">
+                CASA Saving
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <iframe
+                src=""
+                class="lazyVid"
+                data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Themify"
+                width="500"
+                height="300"
+                allowfullscreen="allowfullscreen"></iframe>
+              <div class="projectbutton">
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="button2">View In Chrome Store</a>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">Open Saving Accounts</h3>
+              <p class="cardp">
+                Open Saving Accounts
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <iframe
+                src=""
+                class="lazyVid"
+                data-src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                title="Gif Finder"
+                width="500"
+                height="300"
+                allowfullscreen="allowfullscreen"></iframe>
+              <div class="projectbutton">
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noopener"
+                  class="button2">View In Google Play</a>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">With VikkiGO, Checkin Metro</h3>
+              <p class="cardp">
+                With VikkiGO, Checkin Metro is a set of gamified missions designed to encourage the adoption of online payment system for the newly built Metro system 
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <iframe
+                src=""
+                class="lazyVid"
+                data-src="https://www.youtube.com/embed/zZbVRLKZ3Ag"
+                title="Quick Audit"
+                width="500"
+                height="300"
+                allowfullscreen="allowfullscreen"></iframe>
+              <div class="projectbutton">
+                <a
+                  href="https://chrome.google.com/webstore/detail/quick-audit/cbpdpknmgmmdahedbjndogpfgpolidif"
+                  target="_blank"
+                  rel="noopener"
+                  class="button2">View In Chrome Store</a>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">Other projects</h3>
+              <p class="cardp">
+                There are plenty of currently pending project
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="card-container item">
+          <div class="card1">
+            <div class="card-faces back">
+              <iframe
+                src=""
+                class="lazyVid"
+                data-src="https://www.youtube.com/embed/3mvnYSJQStE"
+                title="Nieves Landscape"
+                width="500"
+                height="300"
+                allowfullscreen="allowfullscreen"></iframe>
+              <div class="projectbutton">
+                <a
+                  href="https://nieveslandscape.com"
+                  target="_blank"
+                  rel="noopener"
+                  class="button2">View Live Site</a>
+              </div>
+              <div class="blue-bar"></div>
+            </div>
+            <div class="card-faces front">
+              <h3 class="front-title">Other stuff</h3>
+              <p class="cardp">
+                a
+              </p>
+              <div class="handicon">
+                <span class="icon-hand-pointer-o"></span>
+              </div>
+              <div class="red-bar"></div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <div class="wrapper4" id="gallery">
+      <div class="headingtravel">
+        <div id="poke-container"></div>
+        <h2>GALLERY</h2>
+      </div>
+      <div class="gallery">
+        <figure class="gallery__item gallery__item--1">
+          <img
+            src="images/GoldenGateBridgeblur.jpg"
+            data-src="images/GoldenGateBridge.jpg"
+            data-srcset="images/GoldenGateBridge.jpg"
+            alt="Pic"
+            class="gallery__img lazy" />
+        </figure>
+        <figure class="gallery__item gallery__item--2">
+          <img
+            src="images/IMG_4454blurmobile.jpg"
+            data-src="images/IMG_4454.JPG"
+            data-srcset="images/IMG_4454.JPG"
+            alt="My Pic"
+            class="gallery__img lazy" />
+        </figure>
+        <figure class="gallery__item gallery__item--3">
+          <img
+            src="images/newyorkblurmobile.jpg"
+            data-src="images/newyork.jpg"
+            data-srcset="images/newyork.jpg"
+            alt="My Pic"
+            class="gallery__img lazy" />
+        </figure>
+        <figure class="gallery__item gallery__item--4">
+          <img
+            src="images/music3blurmobile.jpg"
+            data-src="images/music3.jpg"
+            data-srcset="images/music3.jpg"
+            alt="My Pic"
+            class="gallery__img lazy" />
+        </figure>
+        <figure class="gallery__item gallery__item--5">
+          <img
+            src="images/Tonybattsnewyorkblur.jpg"
+            data-src="images/Tonybattsnewyork.jpg"
+            data-srcset="images/Tonybattsnewyork.jpg"
+            alt="My Pic"
+            class="gallery__img lazy" />
+        </figure>
+        <figure class="gallery__item gallery__item--6">
+          <img
+            src="images/tonybattspyramidblur.jpg"
+            data-src="images/tonybattspyramid.jpg"
+            data-srcset="images/tonybattspyramid.jpg"
+            alt="My Pic"
+            class="gallery__img lazy" />
+        </figure>
+      </div>
+    </div>
+
+    <!-- MOBILE GALLERY -->
+    <div id="mobilecolor">
+      <div class="header" id="buttonActive">
+        <button id="galleryButtonOne" class="btn active2">1</button>
+        <button id="galleryButtonTwo" class="btn">2</button>
+      </div>
+      <div class="gallerywrapper">
+        <div class="row">
+          <div class="column">
+            <img
+              width="247" height="185"
+              src="images/GoldenGateBridgeblur.jpg"
+              data-src="images/GoldenGateBridge.jpg"
+              data-srcset="images/GoldenGateBridge.jpg"
+              alt="My Pic"
+              class="lazy item explore-mobile " />
+            <img
+              width="200" height="150"
+              src="images/IMG_4454blurmobile.jpg"
+              data-src="images/IMG_4454.JPG"
+              data-srcset="images/IMG_4454.JPG"
+              alt="My Pic"
+              class="lazy item explore-mobile" />
+            <img
+              width="200" height="267"
+              src="images/mexicoblurmobile.jpg"
+              data-src="images/mexico.jpg"
+              data-srcset="images/mexico.jpg"
+              alt="My Pic"
+              class="lazy item explore-mobile" />
+            <img
+              width="200" height="200"
+              src="images/mexico1blurmobile.jpg"
+              data-src="images/mexico1.jpg"
+              data-srcset="images/mexico1.jpg"
+              alt="My Pic"
+              class="lazy item explore-mobile" />
+            <img
+              width="200" height="150"
+              src="images/music2blurmobile.jpg"
+              data-src="images/music2.jpg"
+              data-srcset="images/music2.jpg"
+              alt="My Pic"
+              class="lazy item explore-mobile" />
+          </div>
+          <div class="column">
+            <img
+              width="200" height="150"
+              src="images/IMG_1742blurmobile.jpg"
+              data-src="images/IMG_1742opt.jpg"
+              data-srcset="images/IMG_1742opt.jpg"
+              class="lazy item explore-mobile"
+              alt="My Pic" />
+            <img
+              width="200" height="200"
+              src="images/mexico2blurmobile.jpg"
+              data-src="images/mexico2.jpg"
+              data-srcset="images/mexico2.jpg"
+              class="lazy item explore-mobile"
+              alt="My Pic" />
+            <img
+              width="200" height="150"
+              src="images/newyorkblurmobile.jpg"
+              data-src="images/newyork.jpg"
+              data-srcset="images/newyork.jpg"
+              class="lazy item explore-mobile"
+              alt="My Pic" />
+            <img
+              width="200" height="267"
+              src="images/newyork1blurmobile.jpg"
+              data-src="images/newyork1.jpg"
+              data-srcset="images/newyork1.jpg"
+              class="lazy item explore-mobile"
+              alt="My Pic" />
+            <img
+              width="200" height="113"
+              src="images/anthonyblurmobile.jpg"
+              data-src="images/anthony.jpg"
+              data-srcset="images/anthony.jpg"
+              class="lazy item explore-mobile"
+              alt="My Pic" />
+            <img
+              width="200" height="133"
+              src="images/music3blurmobile.jpg"
+              data-src="images/music3.jpg"
+              data-srcset="images/music3.jpg"
+              class="lazy item explore-mobile"
+              alt="My Pic" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CONTACT -->
+    <div class="wrapper3" id="contact">
+      <div class="contactheading">
+        <h2>CONTACT</h2>
+      </div>
+      <div id="contactinfo">
+        <p>Enough about me, tell me about yourself</p>
+        <p>Talk to me at dmkhoi6620002gmail.com</p>
+      </div>
+    </div>
+    <div class="containerform" id="contact-form">
+      <form
+        action="https://formspree.io"
+        method="POST"
+        class="fill-form"
+        autocomplete="on">
+        <label for="Name">Name</label>
+        <div class="formpadding">
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="Name"
+            required />
+          <span class="bottom"></span>
+          <span class="right"></span>
+          <span class="top"></span>
+          <span class="left"></span>
+        </div>
+        <small class="requirements validation">Don't be shy! What's your name?</small>
+
+        <label for="email">Email</label>
+        <div class="formpadding">
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            id="email"
+            required />
+
+          <span class="bottom"></span>
+          <span class="right"></span>
+          <span class="top"></span>
+          <span class="left"></span>
+        </div>
+        <small class="requirements validation">Please leave a valid email</small>
+
+        <label for="message">Your Message</label>
+        <div class="formpadding">
+          <textarea
+            class="form-input"
+            name="message"
+            id="message"
+            required
+            style="margin-bottom: -6px"></textarea>
+
+          <span class="bottom"></span>
+          <span class="right"></span>
+          <span class="top"></span>
+          <span class="left"></span>
+        </div>
+        <small class="requirements validation">Is there something you want to say?</small>
+        <input class="form-input" type="submit" value="SUBMIT" />
+        <span class="error" style="text-align: center">Form submission failed, try again later</span>
+        <span class="success" style="text-align: center">Thank you for reaching out!</span>
+      </form>
+    </div>
+    
+    <!-- FOOTER -->
+
+    <footer>
+      <a href="#home" aria-label="Home section">
+        <div class="backtotop">
+          <span class="icon-keyboard_arrow_up"></span>
+        </div>
+      </a>
+      <div class="media">
+        <a 
+          href="https://github.com/dmkhoi-66" 
+          title="Check out my Github"
+          target="_blank"
+          rel="noopener"><span class="icon-git-square"></span></a>
+        <a
+          href="https://linkedin.com"
+          title="View My Linkedin Profile"
+          target="_blank"
+          rel="noopener"><span class="icon-linkedin-square"></span></a>
+        <a
+          href="https://www.instagram.com/dimiki66/"
+          title="Follow Me on Instagram"
+          target="_blank"
+          rel="noopener"><span class="icon-instagram1"></span></a>
+        <a
+          href="pdf/Khoi-Doan-Resume.pdf" 
+          title="View my Resume"
+          target="_blank"
+          rel="noopener"><span class="icon-cv"></span></a>
+        <!--<a
+          href="mailto:dmkhoi662000@gmail.com" 
+          title="Send Me an Email"
+          target="_blank"
+          rel="noopener"><span class="icon-envelope"></span></a>-->
+      </div>
+      <p id="smalltext">
+        <span id="myName">Khoi Doan</span>
+        &copy;<span id="year"></span><img
+          id="footer-logo"
+          src="images/iconK.svg"
+          alt="Icon"
+          aria-hidden="true" />
+      </p>
+    </footer>
+
+    <span id="reload">
+      <div id="notification">
+        A new version of this app is available.
+        <span id="toast">Click here</span> to update.
+      </div>
+    </span>
+  </div>
+
+  <!-- LOAD SERVICE WORKER -->
+  <script data-cfasync="false" src="cdn-cgi/email-decode.min.js"></script><script>
+    if (!navigator.serviceWorker.controller) {
+      navigator.serviceWorker.register("sw.js").then(function (reg) {
+        console.log(
+          "Service worker has been registered for scope: " + reg.scope
+        );
+      });
+    }
+
+    let refreshing;
+    // The event listener that is fired when the service worker updates
+    // Here we reload the page
+    navigator.serviceWorker.addEventListener("controllerchange", function () {
+      if (refreshing) return;
+      window.location.reload();
+      refreshing = true;
+    });
+
+    let newWorker;
+
+    // The click event on the notification
+    document.getElementById("reload").addEventListener("click", function () {
+      newWorker.postMessage({ action: "skipWaiting" });
+    });
+
+    if ("serviceWorker" in navigator) {
+      // Register the service worker
+      navigator.serviceWorker.register("sw.js").then((reg) => {
+        reg.addEventListener("updatefound", () => {
+          // An updated service worker has appeared in reg.installing!
+          newWorker = reg.installing;
+
+          newWorker.addEventListener("statechange", () => {
+            // Has service worker state changed?
+            switch (newWorker.state) {
+              case "installed":
+                // There is a new service worker available, show the notification
+                if (navigator.serviceWorker.controller) {
+                  let notification = document.querySelector("#notification");
+                  notification.className = "show";
+                }
+
+                break;
+            }
+          });
+        });
+      });
+    }
+  </script>
+</body>
+
+</html>
